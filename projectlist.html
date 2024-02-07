@@ -16,10 +16,10 @@
                     <img src="logo" alt="logo">
                     <ul>
                         <li><a href="index.html#header">Home</a></li>
-                        <li><a href="index.html#about">Services</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#completed-courses">Cources</a></li>
+                        <li><a href="index.html#Projects">Projects</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -29,23 +29,70 @@
                 <h1 class="sub-title">My Work</h1>
                 <div class="work-list">
                     <div class="work">
-                        <img src="image1.jpg" alt="">
+                        <img src="Images/ElderCare Logo (1).png" alt="">
                         <div class="layer">
-                            <h3>Social Media App</h3>
+                            <h3>ElderCare Android App</h3>
+                            <p>A mobile application aimed at reminding seniors to eat their meals.</p>
+                            <a href="https://github.com/shmoot001/ElderCare"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/robot1.jpg" alt="">
+                        <div class="layer">
+                            <h3></h3>
                             <p>Description</p>
                             <a href="#"><i class="fa-solid fa-link"></i></a>
                         </div>
                     </div>
                     <div class="work">
-                        <img src="image1.jpg" alt="">
+                        <img src="Images/brickbreaker.png" alt="">
                         <div class="layer">
                             <h3>Social Media App</h3>
+                            <p>Description</p>
+                            <a href="https://github.com/shmoot001/Brick-Breaker"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/ElderCare Logo (1).png" alt="">
+                        <div class="layer">
+                            <h3>ElderCare Android App</h3>
                             <p>Description</p>
                             <a href="#"><i class="fa-solid fa-link"></i></a>
                         </div>
                     </div>
                     <div class="work">
-                        <img src="image1.jpg" alt="">
+                        <img src="Images/robot1.jpg" alt="">
+                        <div class="layer">
+                            <h3></h3>
+                            <p>Description</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/brickbreaker.png" alt="">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>Description</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>                    <div class="work">
+                        <img src="Images/ElderCare Logo (1).png" alt="">
+                        <div class="layer">
+                            <h3>ElderCare Android App</h3>
+                            <p>Description</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/robot1.jpg" alt="">
+                        <div class="layer">
+                            <h3></h3>
+                            <p>Description</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/brickbreaker.png" alt="">
                         <div class="layer">
                             <h3>Social Media App</h3>
                             <p>Description</p>
@@ -56,4 +103,32 @@
             </div>
         </div>
 
- 
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+
+
+    </body>
+</html>
