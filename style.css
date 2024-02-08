@@ -79,7 +79,7 @@ nav ul li a:hover::after{
     color: #ababab;
 }
 .row{
-    display: flex;
+    display: block;
     justify-content: space-between;
     flex-wrap: wrap;
 }
